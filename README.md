@@ -52,7 +52,7 @@ Then follow the following steps:
 
 3). Download Magento 2 version you wish to dockerize and upload it in directory magento2 in parallel docker-compose.yml.
 
-> Go to https://magento.com/tech-resources/download? .
+> Go to wget https://codeload.github.com/magento/magento2/tar.gz/refs/tags/2.4.5 
 
 4). Build the docker image.
 
