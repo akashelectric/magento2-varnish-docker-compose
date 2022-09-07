@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-
+ENV DEBIAN_FRONTEND=noninteractive
 LABEL maintainer="Akash kumar Verma <akashkumarverma@cedcommerce.com>"
 
 RUN apt-get update \
