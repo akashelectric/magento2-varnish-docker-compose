@@ -1,6 +1,6 @@
-From ubuntu:16.04
+From ubuntu:20.04
 
-MAINTAINER Alankrit Srivastava alankrit.srivastava256@webkul.com
+MAINTAINER "Akash Kumar Verma <akashkumarverma@cedcommerce.com>"
 
 ##update server
 
