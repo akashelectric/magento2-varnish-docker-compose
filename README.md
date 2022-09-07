@@ -1,8 +1,5 @@
 #### Setting Up Magento 2 and Varnish Cache on Multi-container Architecture Using Docker-Compose tool
 
-This repository corresponds to architecture setup as mentioned in blog https://cloudkul.com/blog/magento-2-and-varnish-cache-integration-with-docker-compose/.
-
-
 ##### Docker-Compose Tool
 
 As mentioned in Docker docs, Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. 
@@ -29,15 +26,15 @@ Magento 2 works out of box with Varnish Cache and provides its own VCL file for 
 
 In this project, we are using:
 
-> Operating system: Ubuntu 16.04
+> Operating system: Ubuntu 20.04
 
 > Web Server: Apache2
 
-> Database Server: Mysql-server-5.7
+> Database Server: Mysql-server-8.0
 
-> Cache Server: Varnish 4.1
+> Cache Server: Varnish 7.0
 
-> PHP version: PHP-7.1
+> PHP version: PHP-8.1
 
 To begin with, please install docker and docker-compose on your ubuntu server. 
 
@@ -45,7 +42,7 @@ Then follow the following steps:
 
 1). Clone or download this repository as 
 
-> git clone https://github.com/webkul/magento2-varnish-docker-compose.git
+> git clone https://github.com/akashelectric/magento2-varnish-docker-compose.git
 
 2) Set mysql root credentials and name of the database to be created in ~/magento2-varnish-docker-compose/docker-compose.yml.
 
@@ -77,7 +74,6 @@ Then follow the following steps:
 
 Now, your server setup is all ready, now hit your domain name or IP to install Magento 2.
 
-Now to configure Varnish for Magento 2 and test its working, please refer to blog https://cloudkul.com/blog/magento-2-and-varnish-cache-integration-with-docker-compose/.
 
 After configuring Magento 2 for Varnish, go to varnish docker container as
 
@@ -87,6 +83,4 @@ And run the command,
 
 > varnishhist
 
-#### GETTING SUPPORT
 
-If you have any issues, contact us at support@webkul.com or raise ticket at https://webkul.uvdesk.com/
