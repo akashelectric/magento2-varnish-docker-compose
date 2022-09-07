@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
-LABEL maintainer="Alankrit Srivastava <alankrit.srivastava256@webkul.com>"
+LABEL maintainer="Akash Verma <akashkumarverma@cedcommerce.com>"
 
 ARG mysql_password
 ARG mysql_database
@@ -8,9 +8,9 @@ env MYSQL_ROOT_PASSWORD ${mysql_password}
 env MYSQL_DATABASE ${mysql_database}
 
 RUN apt-get update \
-&& echo "mysql-server-5.7 mysql-server/root_password password ${mysql_password}" | debconf-set-selections \
-&& echo "mysql-server-5.7 mysql-server/root_password_again password ${mysql_password}" | debconf-set-selections \
-&& DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server-5.7 && \
+&& echo "mysql-server-8.0 mysql-server/root_password password ${mysql_password}" | debconf-set-selections \
+&& echo "mysql-server-8.0 mysql-server/root_password_again password ${mysql_password}" | debconf-set-selections \
+&& DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server-8.0 && \
     mkdir -p /var/lib/mysql && \
     mkdir -p /var/run/mysqld && \
     mkdir -p /var/log/mysql && \
