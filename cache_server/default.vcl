@@ -1,4 +1,4 @@
-vcl 4.0;
+vcl 7.0;
 
 import std;
 # The minimal Varnish version is 5.0
